@@ -1,42 +1,53 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Navbar Customizada */
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.85);
+    /* Fundo com transparência */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra para efeito de profundidade */
+    padding: 15px 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.navbar-custom .navbar-brand {
+    font-family: 'ro';
+    font-weight: bold;
+    color: #fff !important;
+    font-size: 1.5rem;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.navbar-custom .nav-link {
+    color: #bbb !important;
+    /* Cor dos links */
+    font-size: 1.1rem;
+    margin-right: 20px;
+    transition: color 0.5s ease, transform 0.5s ease;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar-custom .nav-link:hover {
+    color: #080808 !important;
+    /* Cor de hover em laranja */
+    transform: scale(1.3);
+    /* Efeito de zoom suave */
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.navbar-custom .cta {
+    display: flex;
+    align-items: center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.navbar-custom .btn-reserve {
+    background-color: #080808;
+    /* Laranja vibrante */
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.navbar-custom .btn-reserve:hover {
+    background-color: #080808;
+    /* Cor de hover do botão */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
